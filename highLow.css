@@ -48,7 +48,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 1px 1px 10px 0.5px red;
+    box-shadow: 1px 1px 10px 0.5px rgba(255, 0, 0, 0.897);
 }
 
 i {
