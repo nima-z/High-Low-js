@@ -36,13 +36,37 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: center;
+    /* margin-right:5rem */
 }
 
-.butlink {
+button {
     width:5rem;
-    height:5rem
+    height:5rem;
+    border-radius: 2rem;
+    background-color: rgb(23, 22, 22);
+    border-color: rgb(155, 4, 4);
 }
 
+button:hover {
+    box-shadow: 1px 1px 10px 0.5px red;
+}
+
+i {
+    font-size: 2rem;
+    color:rgba(216, 8, 8, 0.89)
+}
 .score {
-    color:white
+    color:white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Staatliches', cursive;
+    
+}
+
+#score {
+    color: rgba(216, 8, 8, 0.89);
+}
+
+#bestscore {
+    color:rgba(216, 8, 8, 0.89)
 }
