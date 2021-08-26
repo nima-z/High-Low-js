@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(23, 22, 22);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height:90vh;
+}
+
+#mother_div {
+    background-color: rgb(41, 43, 39);
+    width:100%;
+    max-width: 840px;
+    height:30rem;
+    border-radius:20px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border:2px solid rgb(41, 43, 39);
+}
+
+.img_box {
+    margin: 1rem;
+    display:flex;
+    align-items: center;
+}
+
+.img_box > img {
+    height:25rem
+}
+
+.but_box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.butlink {
+    width:5rem;
+    height:5rem
+}
+
+.score {
+    color:white
+}
