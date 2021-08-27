@@ -4,14 +4,16 @@ html {
 
 body {
     background-color: rgb(23, 22, 22);
+    color:rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
     min-height:90vh;
 }
 
 #mother_div {
-    background-color: rgb(41, 43, 39);
+    background-color: rgb(39, 31, 31);
     width:100%;
     max-width: 840px;
     height:30rem;
@@ -19,24 +21,39 @@ body {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    border:2px solid rgb(41, 43, 39);
+    border:2px solid rgb(39, 31, 31);
+    box-shadow: 0 0 10px 0px crimson;
+}
+
+h1 {
+    position: absolute;
+    top:0.5rem;
+    left:2.5rem;
+    font-family: 'Righteous', cursive;
+    color:rgb(249, 236, 236);
+    text-shadow: 1px 6px 10px #cc0000;
 }
 
 .img_box {
     margin: 1rem;
     display:flex;
     align-items: center;
+    border-radius:15px;
+    box-shadow: 0 0 10px 1px rgb(23, 22, 22);
 }
 
 .img_box > img {
-    height:25rem
+    height:25rem;
+    filter: brightness(90%);
+
+
 }
 
 .but_box {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-right:5rem */
+    /* margin-right:3rem */
 }
 
 button {
@@ -48,7 +65,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 1px 1px 10px 0.5px rgba(255, 0, 0, 0.897);
+    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.897);
 }
 
 i {
@@ -56,7 +73,7 @@ i {
     color:rgba(216, 8, 8, 0.89)
 }
 .score {
-    color:white;
+    color:rgb(223, 200, 200);
     font-weight: 500;
     font-size: 1.1rem;
     font-family: 'Staatliches', cursive;
@@ -64,9 +81,9 @@ i {
 }
 
 #score {
-    color: rgba(216, 8, 8, 0.89);
+    color: rgba(201, 27, 27, 0.879);
 }
 
 #bestscore {
-    color:rgba(216, 8, 8, 0.89)
+    color:rgba(201, 27, 27, 0.879);
 }
