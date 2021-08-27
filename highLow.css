@@ -12,7 +12,8 @@ body {
     min-height:90vh;
 }
 
-#mother_div {
+.mother_div {
+    box-sizing: border-box;
     background-color: rgb(39, 31, 31);
     width:100%;
     max-width: 840px;
@@ -23,6 +24,7 @@ body {
     align-items: center;
     border:2px solid rgb(39, 31, 31);
     box-shadow: 0 0 10px 0px crimson;
+    transition: 0.5s;
 }
 
 h1 {
@@ -34,6 +36,20 @@ h1 {
     text-shadow: 1px 6px 10px #cc0000;
 }
 
+.scorebox {
+    color:rgb(223, 200, 200);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.score {
+    color: rgba(201, 27, 27, 0.879);
+}
+.best_score {
+    color: rgba(201, 27, 27, 0.879);
+}
+
 .img_box {
     margin: 1rem;
     display:flex;
@@ -42,11 +58,9 @@ h1 {
     box-shadow: 0 0 10px 1px rgb(23, 22, 22);
 }
 
-.img_box > img {
+.card_img {
     height:25rem;
     filter: brightness(90%);
-
-
 }
 
 .but_box {
@@ -56,7 +70,7 @@ h1 {
     /* margin-right:3rem */
 }
 
-button {
+.but_box button {
     width:5rem;
     height:5rem;
     border-radius: 2rem;
@@ -64,26 +78,39 @@ button {
     border-color: rgb(155, 4, 4);
 }
 
-button:hover {
+.but_box button:hover {
     box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.897);
 }
 
-i {
+button .fa {
     font-size: 2rem;
-    color:rgba(216, 8, 8, 0.89)
-}
-.score {
-    color:rgb(223, 200, 200);
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-family: 'Staatliches', cursive;
-    
+    color:rgba(216, 8, 8, 0.89);
 }
 
-#score {
-    color: rgba(201, 27, 27, 0.879);
+@media (max-width: 1195px) {
+    .mother_div {
+        margin-top: 2.5rem;
+    }
 }
 
-#bestscore {
-    color:rgba(201, 27, 27, 0.879);
+@media (max-width: 483px) {
+    .mother_div {
+        flex-direction: column;
+        min-height: 37rem;
+        margin-top: 5rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .but_box {
+        flex-direction: row;
+        justify-content: center;
+        bottom:6rem
+    } 
+    .scorebox {   
+        display:flex;
+        width:100%;
+        justify-content:space-evenly;
+        top:5rem;
+    }
 }
