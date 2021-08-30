@@ -43,11 +43,9 @@ h1 {
     font-family: 'Staatliches', cursive;
 }
 
-.score {
+.scores {
     color: rgba(201, 27, 27, 0.879);
-}
-.best_score {
-    color: rgba(201, 27, 27, 0.879);
+    font-size: 24px;
 }
 
 .img_box {
@@ -87,6 +85,16 @@ button .fa {
     color:rgba(216, 8, 8, 0.89);
 }
 
+#msg {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    transition: 1s;
+    position:absolute;
+    top:0.5rem;
+    text-shadow: 2px 0 1px #cc0000;
+
+}
+
 @media (max-width: 1195px) {
     .mother_div {
         margin-top: 2.5rem;
@@ -111,6 +119,7 @@ button .fa {
         display:flex;
         width:100%;
         justify-content:space-evenly;
+        align-items:center;
         top:5rem;
     }
 }

@@ -25,11 +25,13 @@
 
     <div class="mother_div">
 
+        <p id="msg"></p>
+
         <div class="scorebox">
             <p>Score :</p>
-            <p class="score" id="score"> ###</p>
+            <p class="scores" id="score">0</p>
             <p>Best Score :</p>
-            <p class="best_score" id="bestscore">###</p>
+            <p class="scores" id="bestscore">0</p>
         </div>
 
         <div class="img_box">
@@ -37,15 +39,12 @@
         </div>
 
         <div class="but_box">
-            <button type="button" id="btn" onclick="playerChoice()" value="high"><i class="fa fa-arrow-up"
-                    aria-hidden="true"></i></button>
-            <button type="button" id="btn" onclick="playerChoice()" value="low"><i class="fa fa-arrow-down"
-                    aria-hidden="true"></i></button>
+            <button type="button" id="btnUp" value="high"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+            <button type="button" id="btnDown" value="low"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
         </div>
 
 
     </div>
-
     <script src="highLow.js"></script>
 </body>
 
