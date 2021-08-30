@@ -92,7 +92,7 @@ button .fa {
     position:absolute;
     top:0.5rem;
     text-shadow: 2px 0 1px #cc0000;
-
+    display: none;
 }
 
 @media (max-width: 1195px) {

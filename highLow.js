@@ -26,6 +26,7 @@ function bestScore() {
 
 
 function playerUp() {
+    msg.style.display = "none";
     let num1 = deck.indexOf(card1);
     deck[card1] = "N/A";
 
@@ -44,7 +45,8 @@ function playerUp() {
         card1 = card2;
     }
     else {
-        msg.innerText = "Wrong Guess";
+        card1 = card2;
+        msg.style.display = "inline";
         scores.push(score);
         bestScore();
         score = 0;
@@ -54,6 +56,7 @@ function playerUp() {
 }
 
 function playerDown() {
+    msg.style.display = "none";
     let num1 = deck.indexOf(card1);
     deck[card1] = "N/A";
 
@@ -72,7 +75,8 @@ function playerDown() {
         card1 = card2;
     }
     else {
-        msg.innerText = "Wrong Guess";
+        card1 = card2;
+        msg.style.display = "inline";
         scores.push(score);
         bestScore();
         score = 0;
