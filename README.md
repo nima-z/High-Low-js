@@ -1,5 +1,7 @@
 # High-Low-js
 
+<a href="https://high-low-js.netlify.app/"> <b>Play This Game</b> (preview)</a>
+
 Game "High Low" based on js
 
 Almost Completed!
